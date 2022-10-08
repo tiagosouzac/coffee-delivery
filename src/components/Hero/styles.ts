@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import heroBg from '../../assets/bg-hero-section.svg'
 
 export const Container = styled.section`
-  padding: 92px 0;
+  padding: 5.75rem 0;
   background: url(${heroBg});
 
   & > div {
@@ -19,33 +19,30 @@ export const Container = styled.section`
 export const Title = styled.h1`
   color: ${({ theme }) => theme['gray-900']};
   font-family: 'Baloo 2', sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
-  line-height: 62px;
+  line-height: 4rem;
 `
 
 export const Description = styled.p`
-  margin-top: 16px;
+  margin-top: 1rem;
   color: ${({ theme }) => theme['gray-800']};
   font-family: Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 `
 
 export const Benefits = styled.ul`
-  margin-top: 66px;
+  margin-top: 4rem;
   list-style: none;
   display: grid;
   grid-template-columns: max-content max-content;
-  column-gap: 40px;
-  row-gap: 20px;
+  column-gap: 2.5rem;
+  row-gap: 1.25rem;
 
   li {
     color: ${({ theme }) => theme['gray-700']};
     font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -64,9 +61,9 @@ type BenefitIconWrapperProps = {
 }
 
 export const BenefitIconWrapper = styled.div<BenefitIconWrapperProps>`
-  width: 32px;
-  height: 32px;
-  border-radius: 32px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
   background-color: ${({ theme, variant }) =>
     theme[BENEFIT_ICON_COLORS[variant]]};
   display: flex;

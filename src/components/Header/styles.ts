@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
   width: 100%;
   max-width: 1120px;
-  padding: 32px 0;
+  padding: 2rem 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -23,9 +23,9 @@ export const Navigation = styled.nav`
   gap: 0.75rem;
 
   a {
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
