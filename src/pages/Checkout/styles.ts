@@ -1,8 +1,15 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.form`
   max-width: 1120px;
   margin: 40px auto;
+  display: flex;
+`
+
+export const ShippingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 `
 
 export const ShippingTitle = styled.strong`

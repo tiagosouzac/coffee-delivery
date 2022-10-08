@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  max-width: max-content;
   padding: 2.5rem;
   border-radius: 6px;
   background-color: ${({ theme }) => theme['gray-200']};
@@ -33,7 +32,7 @@ export const Description = styled.div`
   }
 `
 
-export const Form = styled.form`
+export const Form = styled.div`
   display: grid;
   grid-template-columns: 200px 276px 60px;
   column-gap: 0.75rem;

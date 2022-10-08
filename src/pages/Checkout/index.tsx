@@ -1,11 +1,18 @@
+import { PaymentForm } from '../../components/Forms/Payment'
 import { ShippingForm } from '../../components/Forms/Shipping'
-import { Container, ShippingTitle } from './styles'
+import { Container, ShippingContainer, ShippingTitle } from './styles'
 
 export function Checkout() {
   return (
     <Container>
-      <ShippingTitle>Complete seu pedido</ShippingTitle>
-      <ShippingForm />
+      <ShippingContainer>
+        <div>
+          <ShippingTitle>Complete seu pedido</ShippingTitle>
+          <ShippingForm />
+        </div>
+
+        <PaymentForm />
+      </ShippingContainer>
     </Container>
   )
 }
